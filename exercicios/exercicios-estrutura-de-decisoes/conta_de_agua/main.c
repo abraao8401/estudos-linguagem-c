@@ -10,14 +10,14 @@ scanf("%d %lf %c", &contaCliente, &consumo, &consumidor);
         if(consumo <= 80){
             valorConta = 500.00;
         }else{
-            valorConta = 500 + (consumo * 0.25);
+            valorConta = 500 + ((consumo-80)* 0.25);
         }
         
     }else if(consumidor == 'I'){
         if(consumo <= 100){
             valorConta = 800.00;
         }else{
-            valorConta = 800 + (consumo * 0.04);
+            valorConta = 800 + ((consumo-100) * 0.04);
         }
         
     }else if(consumidor == 'R'){
